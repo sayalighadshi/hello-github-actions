@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ecobliss botanicals-makeup products</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        header {
+            background: #ffe5e9;
+            color: blue;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+        header h1 {
+            font-size: 1.8em;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+        
+        nav ul li{
+            margin: 0 15px;
+        }
+        nav ul li a{
+            text-decoration: underline;
+            color: #333;
+        }
+        .hero{
+            text-align: center;
+            padding: 50px 20px;
+            background: #ffe5e9;
+        }
+        .hero h2{
+            font-size: 2.5em;
+        }
+        .cta-button{
+            background: #420ede;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            text-decoration: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .products{
+            padding: 20px;
+            background: #0b78e4;
+        }
+        .products-grid{
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+            gap:20px
+
+        }
+        .products-card{
+            background: #4f06d7;
+            padding: 10px;
+            text-align: center;
+            border: 1px solid#ddd;
+            border-radius: 5px;
+        }
+        footer{
+            text-align: center;
+            background: #333;
+            color: #fff;
+            padding: 10px 0;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>ecobliss botanicals-makeup</h1>
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#home">home</a>
+                </li>
+                <li>
+                    <a href="#shop">shop</a>
+                </li><li>
+                    <a href="#about">about</a>
+                </li>
+                <li>
+                    <a href="#contact">contant</a>
+                </li>
+                <li>
+                    <a href="#blog">blog</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section id="home" class="hero">
+        <h2>welcome to ecobliss botanicals</h2>
+        <p>experience the essence of nature with our eco-friendly makeup products.</p>
+        <a href="#shop" class="CTA-BUTTON">shop now</a>
+    </section>
+    <section id="shop" class="products">
+        <h2>our makeup collection</h2>
+        <div class="products-grid">
+            <div class="products-card">
+                <img src="https://2.bp.blogspot.com/-RobuXq1V-Fc/V8rq4hyQkkI/AAAAAAAAH_A/bKw9tRyPhTkK8bJ76pfk3uK9h2wSESF3ACEw/s1600/Too-Faced-Born-This-Way-2.jpg" alt=" natural foundation"
+                style="width: 100%;">
+                <h3>natural foundation</h3>
+                <p>$35.00</p>
+                <button>add to cart</button>
+
+                <div class="products-card">
+                    <img src="https://thumbs.dreamstime.com/b/lipstick-1937990.jpg" alt=" organic lipstick"
+                    style="width: 100%;">
+                    <h3>organic lipstick</h3>
+                    <p>$18.00</p>
+                    <button>add to cart</button>
+
+                    <div class="products-card">
+                        <img src="https://cdn.shopify.com/s/files/1/0647/7244/0300/products/skintific_10_niacinamide_brigh_1660542117_27643707_2000x.jpg?v=1666076040" alt=" serum"
+                        style="width: 100%;">
+                        <h3>natural serum</h3>
+                        <p>$40.00</p>
+                        <button>add to cart</button>
+
+                        <div class="products-card">
+                            <img src="https://i.pinimg.com/originals/c9/8b/0c/c98b0cf3095abedc75dd9577b024df01.jpg" alt=" natural eyeshadow"
+                            style="width: 100%;">
+                            <h3>natural eyeshadow</h3>
+                            <p>$33.00</p>
+                            <button>add to cart</button>
+            </div>
+        </div>
+    </section>
+    <section id="about" class="about">
+        <h2>about us</h2>
+        <p>ecobliss botanicals offers a luxurious collection of eco-friendly,cruelty-free makeup products crafted with organic ingredients for a healthier glow.</p>
+        <a href="#learn-more" class="cta-button">learn more</a>
+    </section>
+    <section id="contant" class="contant">
+        <h2>contant us</h2>
+        <form action="submit_form.php"
+        method="post">
+    <label for="name">name:</label>
+    <input type="text" id="name" name="sayali ghadshi" required>
+    <label for="email">email:</label>
+    <input type="email" id="email" name="ghadshisayali2@gmail.com" required>
+    <label for="message">message:</label>
+    <textarea id="message" name="message" required>
+
+    </textarea>
+    <button type="submit">send</button>
+</form>
+    </section>
+    <section id="blog" class="blog">
+        <h2>from our blog</h2>
+        <p>read the latest tips and trends in eco-friendly makeup and beauty.</p>
+    </section>
+    <a href="blog.html" class="cta-button">visit our blog</a>
+    <section>
+        <footer>
+            <p>@ 2025 ecobliss botanicals.all rights reserved.</p>
+            <p><a href="#home" style="color: #fff; text-decoration: underline;">back to top</a></p>
+        </footer>
+        <script>
+            const buttons= document.querySelectorAll('buton');
+            buttons.forEach(buttons=>{buttons.addEventListener('click',()=>{
+                alert('item added to cart!');
+            });
+        });
+        </script>
+</body>
+</html>
